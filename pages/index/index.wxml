@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view style="display: block" wx:if="{{device.length==0}}">
+  <image style="width: 150rpx;height: 150rpx;margin-left:300rpx;" src='../../images/fail.png'></image>
+  <view style="font-size:26rpx;text-align:center">周围无蓝牙设备或者未开启蓝牙</view>
+</view>
+<view class="container">
+  <block wx:for="{{device}}" wx:for-item="item">
+    <view class="device_box" data-deviceId="{{item.ID}}" data-deviceName="{{item.name}}" catchtap="onLianTap">
+      <view class='device_NI'>
+        <view class="device_name">{{item.name}}</view>
+        <view class="device_id">{{item.ID}}</view>
+      </view>
+      <view class='device_RSSI'>
+        <image class='RSSI_img' src='{{item.img}}'></image>
+        <text>{{item.RSSI}}</text>
+      </view>
+    </view>
+  </block>
+</view>

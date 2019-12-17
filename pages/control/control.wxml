@@ -1,0 +1,22 @@
+<view class="connect_box">
+  <text class='connect_device_name'>{{deviceName}}</text>
+  <input class="connect_device_back" disabled value="{{recv_value}}"></input>
+  <text wx:if="{{connect}}" class="connect_state" catchtap="DisConnectTap">已连接</text>
+  <text wx:else class="connect_state">未连接</text>
+</view>
+
+<view>
+  <view catchtap="forward" class="triangle-up" hover-class='wsui-btn__hover_list'></view>
+  <view style="display:flex;">
+    <view catchtap="turn_left" class="triangle-left" hover-class='wsui-btn__hover_list'></view>
+    <view catchtap="stop" class="square" hover-class='wsui-btn__hover_list'></view>
+    <view catchtap="turn_right" class="triangle-right" hover-class='wsui-btn__hover_list'></view>
+  </view>
+  <view catchtap="back" class="triangle-down" hover-class='wsui-btn__hover_list'></view>
+</view>
+
+<view style="display:flex;margin-top: 80rpx;">
+  <view catchtap="acc" class="button1" hover-class='wsui-btn__hover_list'>加速</view>
+  <view catchtap="light" class="button2" hover-class='wsui-btn__hover_list'>开灯</view>
+  <view catchtap="slo" class="button3" hover-class='wsui-btn__hover_list'>减速</view>
+</view>

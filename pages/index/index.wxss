@@ -1,0 +1,35 @@
+/**index.wxss**/
+.device_box{
+    width: 715rpx;
+    border-bottom: 1px solid #eee;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30rpx;
+}
+.device_name{
+    font-size: 42rpx;
+    color: rgb(46, 46, 46);
+    margin-bottom: 5px;
+}
+.device_id{
+    font-size: 32rpx;
+    color: #666;
+}
+.device_RSSI{
+    font-size: 32rpx;
+    color: #666;
+    float: right;
+    padding-right: 30rpx;
+    margin-top: 20px;
+    vertical-align: middle
+    
+}
+.device_NI{
+    display: inline-block
+}
+.RSSI_img{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10rpx;
+}
